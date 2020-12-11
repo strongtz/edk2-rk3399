@@ -1,0 +1,58 @@
+#/** @file
+#  INF file for the eMMC Host Protocol implementation for the DesignWare MMC.
+#
+#  Copyright (c) 2014-2017, Linaro Limited. All rights reserved.
+#  Copyright (c) 2017, Rockchip Inc. All rights reserved.
+#  Copyright (c) 2019, Andrey Warkentin <andrey.warkentin@gmail.com>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution.  The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+#**/
+
+[Defines]
+  INF_VERSION                    = 0x00010019
+  BASE_NAME                      = DwEmmcDxe
+  FILE_GUID                      = cd9db94e-7970-4a20-9f09-07a3a5aab5cf
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+
+  ENTRY_POINT                    = DwEmmcDxeInitialize
+
+[Sources.common]
+  DwEmmcDxe.c
+
+[Packages]
+  EmbeddedPkg/EmbeddedPkg.dec
+  MdePkg/MdePkg.dec
+  sdm845Pkg/Drivers/DwEmmcDxe/DwEmmcDxe.dec  
+  sdm845Pkg/sdm845Pkg.dec
+
+[LibraryClasses]
+  ArmLib
+  BaseLib
+  BaseMemoryLib
+  CacheMaintenanceLib
+  IoLib
+  MemoryAllocationLib
+  TimerLib
+  UefiDriverEntryPoint
+  UefiLib
+  CRULib
+
+[Protocols]
+  gEfiCpuArchProtocolGuid
+  gEfiDevicePathProtocolGuid
+  gEmbeddedMmcHostProtocolGuid
+
+[Pcd]
+  gDwEmmcDxeTokenSpaceGuid.PcdDwEmmcDxeBaseAddress
+  gDwEmmcDxeTokenSpaceGuid.PcdDwEmmcDxeClockFrequencyInHz
+
+[Depex]
+  TRUE
