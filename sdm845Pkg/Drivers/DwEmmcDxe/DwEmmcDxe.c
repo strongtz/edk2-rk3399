@@ -577,7 +577,7 @@ DwEmmcReadBlockData (
     }
 
     if (!DataLen) {
-      ret = (MmioRead32(DWEMMC_RINTSTS) & (DWEMMC_INT_DRT | DWEMMC_INT_SBE | DWEMMC_INT_EBE | DWEMMC_INT_DCRC))? 
+      ret = (MmioRead32(DWEMMC_RINTSTS) & (DWEMMC_INT_DRT | DWEMMC_INT_SBE | DWEMMC_INT_EBE | DWEMMC_INT_DCRC))?
         EFI_DEVICE_ERROR : EFI_SUCCESS;
       DEBUG((DW_DBG, "%a(): DataLen end :%d\n", __func__, ret));
       break;
@@ -667,7 +667,7 @@ DwEmmcWriteBlockData (
     if (Mask & (MMC_DATA_ERROR_FLAGS)) {
       DEBUG((DEBUG_ERROR, "SdmmcWriteData error, RINTSTS = 0x%08x\n", Mask));
       return EFI_DEVICE_ERROR;
-    }	
+    }
   } while (!(Mask & DWEMMC_INT_DTO));
 
   return EFI_SUCCESS;
@@ -756,7 +756,7 @@ DwEmmcIomux (
   CruWritel((0x1 << ( 10 + 16)) | (0 << 10), CRU_SOFTRSTS_CON(7));
 
   PllRate = rk3399_pll_get_rate(PLL_GPLL);
-  DEBUG ((DW_DBG, "%a(): GPLL PllRate=%d\n", __func__, PllRate));
+  DEBUG ((DEBUG_ERROR, "%a(): GPLL PllRate=%d\n", __func__, PllRate));
 
   if (PllRate == 800000000) {
     /*

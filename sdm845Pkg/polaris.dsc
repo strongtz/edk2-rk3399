@@ -13,7 +13,7 @@
 
 [PcdsFixedAtBuild.common]
   # System Memory 
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0xA0000000
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x40000000
 
-  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1920
-  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1080
+  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
+  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|900

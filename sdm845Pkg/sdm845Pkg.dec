@@ -37,7 +37,7 @@
 
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
-  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0xF6300000|UINT32|0x0000a400
+  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0xF5F00000|UINT32|0x0000a400
   gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1920|UINT32|0x0000a401
   gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1080|UINT32|0x0000a402
   gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403

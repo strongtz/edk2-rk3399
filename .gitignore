@@ -1,0 +1,7 @@
+
+workspace
+sdm845Pkg/AcpiTables/3399.*
+sdm845Pkg/AcpiTables/*.tar.gz
+sdm845Pkg/AcpiTables/3399/*.aml
+sdm845Pkg/FdtBlob/*.bak
+

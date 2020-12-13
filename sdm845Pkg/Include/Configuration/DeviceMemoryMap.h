@@ -28,75 +28,75 @@ typedef struct {
 
 static ARM_MEMORY_REGION_DESCRIPTOR_EX gDeviceMemoryDescriptorEx[] = {
      /* Address, Length, ResourceType, Resource Attribute, ARM MMU Attribute, HobOption, EFI Memory Type */
-    
-     {     
-          // ATF 
-          0x00000000, 
-          0x00200000, 
+
+     {
+          // ATF
+          0x00000000,
+          0x00200000,
           EFI_RESOURCE_MEMORY_RESERVED,
           EFI_RESOURCE_ATTRIBUTE_PRESENT,
-          ARM_MEMORY_REGION_ATTRIBUTE_UNCACHED_UNBUFFERED, 
-          AddMem, 
+          ARM_MEMORY_REGION_ATTRIBUTE_UNCACHED_UNBUFFERED,
+          AddMem,
           EfiReservedMemoryType
      },
-     {     
-          // HLOS memory 1 
-          0x00200000, 
-          0x01E80000, 
+     {
+          // HLOS memory 1
+          0x00200000,
+          0x01E80000,
           EFI_RESOURCE_SYSTEM_MEMORY,
           SYSTEM_MEMORY_RESOURCE_ATTR_CAPABILITIES,
-          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK, 
-          AddMem, 
+          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK,
+          AddMem,
           EfiConventionalMemory
      },
 	{
           // UEFI FD
-          0x02080000, 
-          0x00200000, 
+          0x02080000,
+          0x00200000,
           EFI_RESOURCE_SYSTEM_MEMORY,
           SYSTEM_MEMORY_RESOURCE_ATTR_CAPABILITIES,
-          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK, 
+          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK,
           AddMem,
           EfiBootServicesCode
      },
 	{
           // HLOS memory 2
-          0x02280000, 
-          0xF4080000, 
+          0x02280000,
+          0xF3C80000,
           EFI_RESOURCE_SYSTEM_MEMORY,
           SYSTEM_MEMORY_RESOURCE_ATTR_CAPABILITIES,
-          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK, 
-          AddMem, 
+          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK,
+          AddMem,
           EfiConventionalMemory
      },
 	{
           // Display Reserved
-          0xF6300000, 
-          0x007E9000, 
+          0xF5F00000,
+          0x007E9000,
           EFI_RESOURCE_MEMORY_RESERVED,
           EFI_RESOURCE_ATTRIBUTE_WRITE_THROUGH_CACHEABLE,
-          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_THROUGH, 
-          AddMem, 
+          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_THROUGH,
+          AddMem,
           EfiMaxMemoryType
      },
 	{
           // HLOS memory 3
-          0xF6AE9000, 
-          0x01517000, 
+          0xF66E9000,
+          0x01917000,
           EFI_RESOURCE_SYSTEM_MEMORY,
           SYSTEM_MEMORY_RESOURCE_ATTR_CAPABILITIES,
-          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK, 
-          AddMem, 
+          ARM_MEMORY_REGION_ATTRIBUTE_WRITE_BACK,
+          AddMem,
           EfiConventionalMemory
      },
 	{
           // Registers regions
-          0xF8000000, 
-          0x08000000, 
+          0xF8000000,
+          0x08000000,
           EFI_RESOURCE_MEMORY_MAPPED_IO,
-          EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE, 
+          EFI_RESOURCE_ATTRIBUTE_UNCACHEABLE,
           ARM_MEMORY_REGION_ATTRIBUTE_DEVICE,
-          AddDev, 
+          AddDev,
           EfiMemoryMappedIO
      },
      /* Terminator */

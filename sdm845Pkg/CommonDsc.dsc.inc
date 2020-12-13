@@ -68,6 +68,8 @@
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
   UartLib|sdm845Pkg/Library/SerialPortLib/UartLib.inf
+  SerialPortLib|sdm845Pkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
+  SerialPortLib|sdm845Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
   SerialPortLib|sdm845Pkg/Library/SerialPortLib/SerialPortLib.inf
 
   CRULib|sdm845Pkg/Library/CRULib/CRULib.inf
@@ -186,7 +188,7 @@
   SecurityManagementLib|MdeModulePkg/Library/DxeSecurityManagementLib/DxeSecurityManagementLib.inf
   PerformanceLib|MdeModulePkg/Library/DxePerformanceLib/DxePerformanceLib.inf
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
-  DtPlatformDtbLoaderLib|EmbeddedPkg/Library/DxeDtPlatformDtbLoaderLibDefault/DxeDtPlatformDtbLoaderLibDefault.inf
+  # DtPlatformDtbLoaderLib|EmbeddedPkg/Library/DxeDtPlatformDtbLoaderLibDefault/DxeDtPlatformDtbLoaderLibDefault.inf
 
 
 [LibraryClasses.common.UEFI_APPLICATION]

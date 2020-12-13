@@ -140,7 +140,7 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
   
-  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0xF6300000
+  gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0xF5F00000
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -260,7 +260,7 @@
   #
   # FDT support
   #
-  EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
+  # EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
 
   #
   # SMBIOS Support
