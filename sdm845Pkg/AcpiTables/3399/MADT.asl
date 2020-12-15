@@ -41,7 +41,7 @@
 [078h 0120   1]             Efficiency Class : 00
 [079h 0121   3]                     Reserved : 000000
                       SPE Overflow Interrupt : 0000
-
+/*
 [07Ch 0124   1]                Subtable Type : 0B [Generic Interrupt Controller]
 [07Dh 0125   1]                       Length : 50
 [07Eh 0126   2]                     Reserved : 0000
@@ -151,7 +151,7 @@
 [208h 0520   1]             Efficiency Class : 01
 [209h 0521   3]                     Reserved : 000000
                       SPE Overflow Interrupt : 0000
-
+*/
 [2ACh 0684   1]                Subtable Type : 0C [Generic Interrupt Distributor]
 [2ADh 0685   1]                       Length : 19
 [2AEh 0686   2]                     Reserved : 0000
