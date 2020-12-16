@@ -122,7 +122,6 @@ READ_LOCK_STATUS   = TRUE
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
 
-
   #
   # Multiple Console IO support
   #
@@ -136,7 +135,6 @@ READ_LOCK_STATUS   = TRUE
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
 
   INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
-
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   #
@@ -150,7 +148,6 @@ READ_LOCK_STATUS   = TRUE
   #
   # INF sdm845Pkg/Drivers/OemBoardMiscDxe/OemBoardMiscDxe.inf
 
-
   #
   # Virtual Keyboard
   #
@@ -159,8 +156,6 @@ READ_LOCK_STATUS   = TRUE
   INF sdm845Pkg/sdm845Dxe/sdm845Dxe.inf
   INF sdm845Pkg/SimpleFbDxe/SimpleFbDxe.inf
 
-
-  #
   # USB Host Support
   #
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
@@ -208,30 +203,7 @@ READ_LOCK_STATUS   = TRUE
     SECTION RAW = sdm845Pkg/AcpiTables/3399/FADT.aml
     SECTION RAW = sdm845Pkg/AcpiTables/3399/GTDT.aml
     SECTION RAW = sdm845Pkg/AcpiTables/3399/MADT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/CSRT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/DBG2.aml
-	#   SECTION RAW = sdm845Pkg/AcpiTables/testing/DSDT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/FACS.aml
-	#   SECTION RAW = sdm845Pkg/AcpiTables/testing/FADT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/GTDT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/IORT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/MADT.aml
-  # 	SECTION RAW = sdm845Pkg/AcpiTables/testing/MCFG.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/PPTT.aml
-  #   SECTION RAW = sdm845Pkg/AcpiTables/testing/TPM2.aml
-    
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/CSRT.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/DBG2.aml
-	#   # SECTION RAW = sdm845Pkg/AcpiTables/test2/DSDT.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/FACS.aml
-	#   # SECTION RAW = sdm845Pkg/AcpiTables/test2/FADT.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/GTDT.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/IORT.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/MADT.aml
-  # 	# SECTION RAW = sdm845Pkg/AcpiTables/test2/MCFG.aml
-  #   # SECTION RAW = sdm845Pkg/AcpiTables/test2/PPTT.aml
-
-	#   SECTION UI = "AcpiTables"
+	  SECTION UI = "AcpiTables"
   }
 
   #

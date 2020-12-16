@@ -12,8 +12,9 @@
 !include sdm845Pkg/sdm845Pkg.dsc
 
 [PcdsFixedAtBuild.common]
-  # System Memory 
+  # System Memory size
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x40000000
 
+  # Adjust your framebuffer size here
   gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
   gsdm845PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|900

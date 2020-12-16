@@ -56,9 +56,6 @@
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
 
-
-
-
   PlatformBootManagerLib|sdm845Pkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
   MemoryInitPeiLib|sdm845Pkg/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
   PlatformPeiLib|sdm845Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
@@ -254,7 +251,6 @@
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
   # sdm845Pkg/AcpiTables/AcpiTables.inf
-  # sdm845Pkg/AcpiTables/3399/AcpiTables.inf
 
 
   #
