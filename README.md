@@ -2,6 +2,8 @@
 
 This repo is based on edk2-sdm845 and rk3399-edk2, check out those if you have questions.
 
+Telegram group: https://t.me/UEFIonRK3399
+
 ## Dependencies
 
 Ubuntu 18.04:
@@ -10,6 +12,7 @@ Ubuntu 18.04:
 sudo apt update
 sudo apt install build-essential uuid-dev iasl git nasm python3-distutils gcc-aarch64-linux-gnu
 ```
+
 Ubuntu 20.04 is also proved to be fine.
 
 
