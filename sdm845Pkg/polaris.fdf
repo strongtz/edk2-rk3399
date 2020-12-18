@@ -203,7 +203,7 @@ READ_LOCK_STATUS   = TRUE
     SECTION RAW = sdm845Pkg/AcpiTables/3399/FADT.aml
     SECTION RAW = sdm845Pkg/AcpiTables/3399/GTDT.aml
     SECTION RAW = sdm845Pkg/AcpiTables/3399/MADT.aml
-	  SECTION UI = "AcpiTables"
+    SECTION UI = "AcpiTables"
   }
 
   #

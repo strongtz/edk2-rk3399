@@ -19,7 +19,7 @@
 [034h 0052   2]              OEM Data Length : 0000 [Optional field not present]
 [036h 0054   2]              OEM Data Offset : 0000 [Optional field not present]
 [038h 0056   2]                    Port Type : 8000
-[03Ah 0058   2]                 Port Subtype : 0003
+[03Ah 0058   2]                 Port Subtype : 0006
 [03Ch 0060   2]                     Reserved : 0000
 [03Eh 0062   2]          Base Address Offset : 0016
 [040h 0064   2]          Address Size Offset : 0022
@@ -31,6 +31,6 @@
 [045h 0069   1]         Encoded Access Width : 20 [Unknown Width Encoding]
 [046h 0070   8]                      Address : 00000000FF1A0000
 
-[04Eh 0078   4]                 Address Size : 00000100
+[04Eh 0078   4]                 Address Size : 00010000
 
 [052h 0082  10]                     Namepath : "\_SB.COM1"
