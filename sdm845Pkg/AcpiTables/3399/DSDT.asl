@@ -11,7 +11,7 @@ DefinitionBlock ("", "DSDT", 5, "RKCP  ", "RKCPEDK2", 0x00003399)
             Name (_HID, "ACPI0007" /* Processor Device */)  // _HID: Hardware ID
             Name (_UID, Zero)  // _UID: Unique ID
         }
-
+#if 0
         Device (CPU1)
         {
             Name (_HID, "ACPI0007" /* Processor Device */)  // _HID: Hardware ID
@@ -41,7 +41,9 @@ DefinitionBlock ("", "DSDT", 5, "RKCP  ", "RKCPEDK2", 0x00003399)
             Name (_HID, "ACPI0007" /* Processor Device */)  // _HID: Hardware ID
             Name (_UID, 0x05)  // _UID: Unique ID
         }
+#endif
 
+#if 0
         Device (EHC0)
         {
             Name (_HID, "PNP0D20")      // _HID: Hardware ID
@@ -78,6 +80,41 @@ DefinitionBlock ("", "DSDT", 5, "RKCP  ", "RKCPEDK2", 0x00003399)
                     0x0000003E,
                 }
             })
+        }
+#endif
+
+        Device (USB0) {    //USB0
+            Name ( _ADR, 0xfe380000)  // _ADR: Address
+            Name (_CID, "ACPI\\PNP0D20")  // _CID: Compatible ID
+            Name (_HRV, 0x00)  // _HRV: Hardware Revision
+            Name (_UID, Zero)  // _UID: Unique ID
+            Method (_HID, 0, NotSerialized)  // _HID: Hardware ID
+            {
+                Return ("PNP0D20")
+            }
+            Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+            {
+                Store (0xfe380000, Local0)
+                Store (0x20000, Local1)
+                Return (UCRS (Local0, Local1, 58, 0x03))
+            }
+        }
+        
+        Device (USB1) {    //USB1
+            Name ( _ADR, 0xfe3c0000)  // _ADR: Address
+            Name (_CID, "ACPI\\PNP0D20")  // _CID: Compatible ID
+            Name (_HRV, 0x00)  // _HRV: Hardware Revision
+            Name (_UID, One)  // _UID: Unique ID
+            Method (_HID, 0, NotSerialized)  // _HID: Hardware ID
+            {
+                Return ("PNP0D20")
+            }
+            Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
+            {
+                Store (0xfe3c0000, Local0)
+                Store (0x20000, Local1)
+                Return (UCRS (Local0, Local1, 62, 0x03))
+            }
         }
 
         Device (COM1)
